@@ -77,6 +77,14 @@ void collisions() {
     tmp=yelDX;  yelDX=redDX;  redDX=tmp;
     tmp=yelDY;  yelDY=redDY;  redDY=tmp;
   }
+  if ( dist( bluX,bluY, yelX,yelY ) < 30 ){
+    tmp=yelDX;  yelDX=bluDX;  bluDX=tmp;
+    tmp=yelDY;  yelDY=bluDY;  bluDY=tmp;
+  }
+  if ( dist( bluX,bluY, redX,redY ) < 30 ){
+    tmp=redDX;  redDX=bluDX;  bluDX=tmp;
+    tmp=redDY;  redDY=bluDY;  bluDY=tmp;
+  }
 }
 
 //// SHOW:  balls, messages
@@ -100,4 +108,8 @@ void keyPressed() {
   if (key == 'r') {
     reset();
   }
+  /*if (key == 'q'); {
+    exit();
+  }
+  */
 }
