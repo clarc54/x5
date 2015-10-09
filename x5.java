@@ -24,7 +24,6 @@ void setup() {
   top=    100;
   bottom= height-50;
   middle= left + (right-left) / 2;
-  //
   reset();
  }
  void reset() {
@@ -105,9 +104,7 @@ void messages() {
 
 //// HANDLERS:  keys, click
 void keyPressed() {
-  if (key == 'r') {
-    reset();
-  }
+  if (key == 'r') reset();
   if (key == 'q') exit();
   
 }
