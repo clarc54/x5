@@ -108,8 +108,6 @@ void keyPressed() {
   if (key == 'r') {
     reset();
   }
-  /*if (key == 'q'); {
-    exit();
-  }
-  */
+  if (key == 'q') exit();
+  
 }
